@@ -72,6 +72,7 @@ var leaderboard = {
         return ({
             name: name,
             icon_url: icon_url,
+            url: 'https://github.com/butttons/bfv-leaderboard',
         });
     },
     fields: function (players, key) {
@@ -111,12 +112,17 @@ var defaultHelp = function () { return ({
         },
         author: {
             name: 'BFV Leaderboard',
+            url: 'https://github.com/butttons/bfv-leaderboard',
             icon_url: 'https://cdn.discordapp.com/embed/avatars/0.png',
         },
         fields: [
             {
                 name: 'Leaderboard',
                 value: 'Usage: ``/top [type] [type key] [sort key] [limit]``\n\n[type]: ``stats``, ``score``, ``firestorm``, ``classes``, ``weapons``, ``vehicles``\n[type key]: ``/help [type]``\n[sort key]: ``/help [type]``\n[limit]: ``number``',
+            },
+            {
+                name: 'Add user',
+                value: 'Usage: ``/add [ign]`',
             },
         ],
     },

@@ -10,7 +10,7 @@ exports.db = knex_1.default({
         error: console.error,
         debug: console.log,
     },
-    connection: {
+    connection: process.env.DATABASE_URL || {
         host: '127.0.0.1',
         user: 'postgres',
         password: 'postgres',
