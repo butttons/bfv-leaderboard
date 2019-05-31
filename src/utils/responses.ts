@@ -34,6 +34,7 @@ const leaderboard = {
     author: (icon_url: string, name: string = 'BFV Leaderboard') => ({
         name,
         icon_url,
+        url: 'https://github.com/butttons/bfv-leaderboard',
     }),
     fields: (players: LeaderboardRow[], key: string) =>
         players.map((player, index) => {
@@ -71,6 +72,7 @@ const defaultHelp = () => ({
         },
         author: {
             name: 'BFV Leaderboard',
+            url: 'https://github.com/butttons/bfv-leaderboard',
             icon_url: 'https://cdn.discordapp.com/embed/avatars/0.png',
         },
         fields: [
