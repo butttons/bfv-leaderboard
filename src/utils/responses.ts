@@ -79,6 +79,10 @@ const defaultHelp = () => ({
                 value:
                     'Usage: ``/top [type] [type key] [sort key] [limit]``\n\n[type]: ``stats``, ``score``, ``firestorm``, ``classes``, ``weapons``, ``vehicles``\n[type key]: ``/help [type]``\n[sort key]: ``/help [type]``\n[limit]: ``number``',
             },
+            {
+                name: 'Add user',
+                value: 'Usage: ``/add [ign]`',
+            },
         ],
     },
 });
