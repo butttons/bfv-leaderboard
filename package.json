@@ -1,0 +1,37 @@
+{
+    "name": "bfv-discord",
+    "version": "1.0.0",
+    "description": "",
+    "main": "build/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "tsc": "tsc",
+        "tsc:w": "tsc --watch",
+        "dev": "nodemon build/index.js",
+        "db:init": "knex migrate:latest --knexfile src/db/knexfile.js",
+        "db:destroy": "knex migrate:rollback --all --knexfile src/db/knexfile.js",
+        "db:re": "npm run db:destroy && npm run db:init",
+        "postinstall": "npm run tsc"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^12.0.3",
+        "tslint": "^5.16.0"
+    },
+    "dependencies": {
+        "module-alias": "^2.2.0",
+        "typescript": "^3.5.1",
+        "@types/inflection": "^1.5.28",
+        "axios": "^0.18.0",
+        "discord.js": "^11.5.1",
+        "dotenv": "^8.0.0",
+        "inflection": "^1.12.0",
+        "knex": "^0.17.0",
+        "pg": "^7.11.0"
+    },
+    "_moduleAliases": {
+        "@": "build"
+    }
+}

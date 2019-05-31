@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "target": "es5",
+        "module": "commonjs",
+        "lib": ["esnext", "dom"],
+        "allowJs": true,
+        "moduleResolution": "node",
+        "rootDir": "src",
+        "outDir": "./build",
+        "emitDecoratorMetadata": true,
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "resolveJsonModule": true,
+        "paths": {
+            "*": ["types/*"],
+            "@/*": ["src/*"]
+        }
+    }
+}
